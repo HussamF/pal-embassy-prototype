@@ -1,0 +1,310 @@
+.about {
+  padding: 10rem 0;
+  min-height: 100vh;
+  background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.9) 60%,
+      rgba(255, 255, 255, 0.9) 60%
+    ),
+    url(../Imgs/about.png) no-repeat center center/contain;
+  position: relative;
+}
+
+.about .about-container {
+  max-width: 80%;
+
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .about-container .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  width: 50%;
+  flex-grow: flex-start;
+}
+
+.about .about-container .about-text h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  position: relative;
+  font-weight: 600;
+  font-family: 'El Messiri', sans-serif;
+  color: black;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.about .about-container .about-text h1::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #40bf4b9f, transparent);
+  margin-top: 1rem;
+}
+.about .about-container .about-text p {
+  line-height: 1.3;
+  font-size: 2.5rem;
+  color: black;
+}
+
+.about .about-container .about-text .accordion-readmore {
+  margin-top: 3rem;
+
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+.about .about-container .about-text .accordion-readmore .accordion-header {
+  text-align: right;
+  color: #e41111;
+
+  background: #c5c5c523;
+  transition: all 0.5s ease;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.about
+  .about-container
+  .about-text
+  .accordion-readmore
+  .accordion-header:hover {
+  background: #f7b7b746;
+  color: black;
+}
+
+.about .about-container .about-text .accordion-item .accordion-header h3 {
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  min-height: 5rem;
+  line-height: 1.6;
+  font-weight: 600;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.5rem;
+  cursor: pointer;
+  position: relative;
+  text-align: right;
+}
+
+.about
+  .about-container
+  .about-text
+  .accordion-item
+  .accordion-header
+  h3::after {
+  content: '\25be';
+  font-size: 2.5rem;
+  position: absolute;
+  left: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.about .about-container .about-text .accordion-item .accordion-header.active {
+  background: #f7b7b746;
+}
+
+.about
+  .about-container
+  .about-text
+  .accordion-item
+  .accordion-header.active
+  h3::after {
+  transform: rotate(-180deg);
+}
+.about .about-container .about-modals-btn {
+  position: relative;
+  background-color: #eee;
+
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 0 2rem;
+}
+
+.about .about-container .info-btns {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about .about-container .info-btns h2 {
+  font-size: 3rem;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  color: white;
+  border-bottom: 2px solid white;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: 'El Messiri', sans-serif;
+}
+.about .about-container .info-btns .info-btn {
+  margin-bottom: 3rem;
+}
+.about .about-container .info-btns .info-btn:first-child {
+  margin-top: 3rem;
+}
+
+.about .about-container .info-btns .info-btn a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.about .about-container .info-btns .info-btn .btn {
+  display: inline-block;
+  width: 350px;
+  height: 75px;
+  max-width: 100%;
+  font-size: 2rem;
+  color: black;
+  /* background: #8e8e8f93; */
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 5;
+
+  /* box-shadow: 3px 3px 1px rgb(104, 104, 104); */
+  /* box-shadow: 0 2px 5px 0 #40bf4b9f; */
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  border: none;
+  transition: all 0.8s ease;
+  font-family: 'El Messiri', sans-serif;
+}
+
+.about .about-container .info-btns .info-btn .btn:hover {
+  background: #f7b7b746;
+  box-shadow: 0 2px 5px 0 #e41111;
+  color: #000;
+}
+/*************************** Modaaaaaaaaaaaaal About ******************/
+
+.about-container {
+  position: relative !important;
+}
+.about-container .modal-about-overlay {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.about-container .modal-about-overlay .modal-about {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1100px;
+  max-width: 90%;
+  height: 80vh;
+  z-index: 10;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.6), 0 7px 20px 0 rgba(0, 0, 0, 0.6);
+  background: #fff;
+  overflow-y: scroll;
+  animation: modalAboutOpen 1s forwards;
+  visibility: hidden;
+  border-radius: 5px;
+}
+
+.about-container .modal-about-overlay .modal-about .modal-header {
+  width: 100%;
+
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.6);
+  background-color: #4b8f48;
+  color: white;
+}
+.about-container .modal-about-overlay .modal-about .modal-header .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 3rem;
+}
+
+.about-container
+  .modal-about-overlay
+  .modal-about
+  .modal-header
+  .title
+  .close-button {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.about-container .modal-about-overlay .modal-about .modal-header h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  margin-top: 1rem;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+.about-container .modal-about-overlay .modal-about .modal-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-container .modal-about-overlay .modal-about .modal-body .ambassador {
+  font-size: 5rem;
+}
+
+.about-container .modal-about-overlay .modal-about .modal-body div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about-container .modal-about-overlay .modal-about .modal-body div h2 {
+  font-size: 2.5rem;
+}
+.about-container .modal-about-overlay .modal-about .modal-body p {
+  font-size: 2.5rem;
+  text-align: right;
+  max-width: 95%;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding: 1rem;
+}
+.about-container .modal-about-overlay .modal-about .modal-body .office p {
+  font-size: 2.2rem;
+}
+.about-container .modal-about-overlay .modal-about .modal-body .office {
+  border-bottom: 1px black solid;
+  margin: 1rem 0;
+}
+
+.about-container
+  .modal-about-overlay
+  .modal-about
+  .modal-body
+  .office:last-child {
+  border-bottom: none;
+}
+
+@keyframes modalAboutOpen {
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}

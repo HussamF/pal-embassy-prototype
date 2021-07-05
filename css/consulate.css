@@ -1,0 +1,136 @@
+.consulate {
+  /* background-color: #e9e9e993; */
+  background-color: #f3f3f3;
+  min-height: 100vh;
+  padding: 6rem 0;
+}
+
+.consulate .consulate-container {
+  max-width: 80%;
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.consulate-container .consulate-header {
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding: 3rem;
+}
+
+.consulate-container .consulate-header h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "El Messiri", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.consulate-container .consulate-header h1::after {
+  content: "";
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(to left, transparent, #40bf4b9f, transparent);
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.consulate-container .consulate-header p {
+  font-size: 2.5rem;
+}
+.consulate-container .accordion {
+  width: 70%;
+}
+
+.consulate-container .accordion .accordion-item {
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.accordion-item .accordion-header {
+  text-align: right;
+  color: black;
+  background: #fff;
+
+  transition: all 0.3s ease;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.09);
+  padding: 0.5rem;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.consulate .consulate-container .accordion-item .accordion-header:hover {
+  background: #f7b7b746;
+}
+
+.consulate .consulate-container .accordion-item .accordion-header h3 {
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  min-height: 5rem;
+  line-height: 1.6;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.5rem;
+  cursor: pointer;
+  position: relative;
+  text-align: right;
+}
+
+.consulate .consulate-container .accordion-item .accordion-header h3::after {
+  content: "\25be";
+  font-size: 2.5rem;
+  position: absolute;
+  left: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.consulate .consulate-container .accordion-item .accordion-header.active {
+  background: #f7b7b769;
+}
+
+.accordion-item .accordion-header.active h3::after {
+  transform: rotate(-180deg);
+}
+
+.accordion-item:hover {
+  background: #fff;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease-in-out;
+  background-color: white;
+  border-radius: 5px;
+}
+.accordion-body-content p {
+  font-size: 2.5rem;
+  line-height: 1;
+  padding: 1rem;
+  font-family: "Abel", sans-serif;
+  text-align: right;
+}
+
+.accordion-body-content h4 {
+  text-align: right;
+  line-height: 1.2;
+  font-size: 2.5rem;
+  padding: 1rem;
+  color: rgb(189, 14, 14);
+}
+
+/* .accordion-body-content p:first-child,
+.accordion-body-content h4:first-child {
+  border-top: 1px solid black;
+  border-image: linear-gradient(to left, black, transparent) 1;
+} */

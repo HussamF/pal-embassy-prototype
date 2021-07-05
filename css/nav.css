@@ -1,0 +1,103 @@
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  transition: 0.5s linear;
+}
+header .logo-container {
+  display: block;
+}
+
+header.sticky .menu {
+  height: 70px;
+  background: #eee;
+  transition: 0.5s linear;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+}
+header.sticky .logo {
+  height: 50px;
+  width: 40px;
+}
+header.sticky .logo-black {
+  display: inline-block;
+  height: 50px;
+  width: 40px;
+}
+header .logo-black {
+  display: none;
+}
+header .logo-white {
+  display: inline-block;
+}
+
+header.sticky .logo-white {
+  display: none;
+}
+
+header.sticky nav ul li a {
+  color: rgb(0, 0, 0);
+}
+
+header.sticky nav ul li a:hover {
+  background: #f7b7b746;
+}
+
+.menu-container .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 2rem;
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  font-family: 'El Messiri', sans-serif;
+
+  font-weight: 500;
+  transition: all 0.7s ease;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  max-width: 100%;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a:hover {
+  background: #8e8e8f93;
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.2);
+}
+
+.hamburger i {
+  color: #000;
+  font-size: 4rem;
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+}
+.logo {
+  width: 60px;
+  height: 70px;
+}
+@media (max-width: 700px) {
+  header {
+    display: none;
+  }
+}

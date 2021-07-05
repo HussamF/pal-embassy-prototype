@@ -1,0 +1,187 @@
+@media (max-width: 1390px) {
+}
+
+@media screen and (max-width: 1200px) {
+  * {
+    font-size: 9px;
+  }
+
+  .contact {
+    overflow-x: hidden;
+  }
+  .about {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url(../Imgs/about.png) no-repeat center center/contain;
+  }
+  .about .about-container {
+    flex-direction: column;
+    /* padding-bottom: 6rem; */
+  }
+
+  .about .about-container .about-text {
+    width: 100%;
+
+    color: red;
+  }
+  .about .about-container .about-modals-btn {
+    width: 98%;
+    margin-top: 6rem;
+  }
+  .about .about-container .info-btns {
+    max-width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .holyland .holyland-container .grid-container .first-row {
+    grid-area: r1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .holyland .holyland-container .grid-container .sec-row {
+    grid-area: r2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .holyland .holyland-container .grid-container .third-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+  }
+
+  .holyland-container .grid-container img {
+    width: 100%;
+  }
+
+  .consulate .consulate-container .accordion {
+    width: 100%;
+  }
+
+  .contact .contact-container .contact-form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+}
+@media screen and (max-width: 860px) {
+}
+@media screen and (max-width: 760px) {
+}
+
+@media screen and (max-width: 920px) {
+  nav {
+    display: none;
+  }
+  .home-banner .home-container .home-heading {
+    top: 50%;
+  }
+
+  /* .home-banner .home-container .home-info {
+    justify-content: space-around;
+    margin-top: 30rem;
+  } */
+  /* .home-banner .home-container .home-heading {
+    top: 25%;
+  } */
+}
+
+@media screen and (max-width: 830px) {
+  .holyland-container {
+    max-width: 90%;
+  }
+  .about .about-container {
+    max-width: 90%;
+  }
+
+  .consulate .consulate-container {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contact .contact-head {
+    font-size: 1rem;
+  }
+  .contact .contact-container {
+    flex-direction: column-reverse;
+    border-bottom: none;
+    gap: 0rem;
+    margin-bottom: 6rem;
+  }
+
+  .contact .contact-container .contact .contact-form {
+    width: 90%;
+  }
+
+  .contact .contact-container .contact-map {
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .home-banner .home-container .home-heading h1 {
+    font-size: 13rem;
+  }
+
+  .home-banner .home-container .home-heading h2 {
+    font-size: 10rem;
+  }
+  /* .home-banner .home-container .home-info {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 20rem;
+  } */
+  /* .home-banner .home-container .first-column {
+    margin-top: 0rem;
+  }
+  .home-banner .home-container .second-column {
+    margin-top: 0rem;
+  } */
+  /* .home-banner .home-container .home-info {
+    justify-content: space-around;
+  } */
+  /* .home-banner .home-container .home-heading {
+    top: 15%;
+  }
+
+  .home-banner .home-container .home-heading h1 {
+    font-size: 8rem;
+  }
+
+  .home-banner .home-container .home-heading h2 {
+    font-size: 7rem;
+  } */
+}
+
+@media screen and (max-width: 477px) {
+  .home-banner .home-container .home-heading h1 {
+    font-size: 10rem;
+  }
+
+  .home-banner .home-container .home-heading h2 {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 377px) {
+  .home-banner .home-container .home-heading h1 {
+    font-size: 9rem;
+  }
+
+  .home-banner .home-container .home-heading h2 {
+    font-size: 7rem;
+  }
+}

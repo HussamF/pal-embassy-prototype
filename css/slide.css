@@ -1,0 +1,115 @@
+.section-slider {
+  position: relative;
+  margin: 0 auto;
+  max-width: 50%;
+  display: none;
+}
+
+.slider {
+  position: relative !important;
+  overflow: hidden;
+  height: 700px;
+  width: 600px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  -webkit-box-shadow: 0px 5px 17px 3px #000000;
+  box-shadow: 0px 5px 17px 3px #000000;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.87s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  flex-direction: column;
+}
+
+.slide.current {
+  opacity: 1;
+}
+.slide-content {
+  max-width: 100%;
+}
+
+.slide-content .slider-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.slide .slide-content h1 {
+  font-size: 7rem;
+  font-family: "El Messiri", sans-serif;
+}
+
+.slide .slide-content h2 {
+  font-size: 6rem;
+  font-family: "El Messiri", sans-serif;
+}
+.slide .btn-div .btn {
+  margin-top: 0;
+}
+
+.slide:first-child {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+    url(../HomeSlideImages/slide1.jpg) no-repeat center center/cover;
+}
+.slide:nth-child(2) {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+    url(../HomeSlideImages/slide2.jpg) no-repeat center center/cover;
+}
+.slide:nth-child(3) {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    url(../HomeSlideImages/slide3.jpg) no-repeat center center/cover;
+}
+
+.section-slider .slide-btn {
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+#next {
+  position: absolute !important;
+  top: 51%;
+  right: 15px;
+  display: none;
+}
+#prev {
+  position: absolute !important;
+  top: 51%;
+  left: 15px;
+  display: none;
+}
+
+.section-slider .slide-btn:hover {
+  background-color: #fff;
+  color: black;
+}
+
+@media (max-width: 1340px) {
+  .section-slider {
+    max-width: 100%;
+  }
+  .slider {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section-slider {
+    display: none;
+  }
+}
