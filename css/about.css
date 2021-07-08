@@ -1,6 +1,6 @@
 .about {
   padding: 10rem 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: linear-gradient(
       to left,
       rgba(255, 255, 255, 0.9) 60%,
@@ -198,7 +198,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  overflow: auto;
+
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
@@ -263,8 +263,8 @@
   justify-content: center;
   flex-direction: column;
 }
-.about-container .modal-about-overlay .modal-about .modal-body .ambassador {
-  font-size: 5rem;
+.about-container .modal-about-overlay .modal-about .modal-body .ambassador img {
+  width: 100%;
 }
 
 .about-container .modal-about-overlay .modal-about .modal-body div {

@@ -8,9 +8,10 @@
       rgba(82, 82, 82, 0.9)
     ),
     url(../Imgs/two.png) no-repeat center center/cover;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+  /* min-height: 100vh; */
+  /* display: flex;
+  align-items: center; */
+  padding: 6rem 0;
 }
 
 .info .info-container {
@@ -27,7 +28,7 @@
   grid-template-areas: "first-column section-slider section-slider  second-column"; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .info .info-container .home-info .second-column {
@@ -60,7 +61,7 @@
   font-size: 3rem;
   padding: 1rem 0;
   color: black;
-  font-family: "El Messiri", sans-serif;
+  font-family: 'El Messiri', sans-serif;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   margin-bottom: 1rem;
 }
@@ -84,7 +85,7 @@
   font-weight: bold;
   border: none;
   transition: all 0.8s ease;
-  font-family: "El Messiri", sans-serif;
+  font-family: 'El Messiri', sans-serif;
 }
 
 .info .info-container .home-info .info-btns .info-btn:last-child {
@@ -170,7 +171,7 @@
   h1 {
   color: rgba(255, 255, 255, 0.6);
   font-size: 10rem;
-  font-family: "El Messiri", sans-serif;
+  font-family: 'El Messiri', sans-serif;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -184,7 +185,7 @@
   p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 8rem;
-  font-family: "El Messiri", sans-serif;
+  font-family: 'El Messiri', sans-serif;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -311,9 +312,9 @@
 @media (max-width: 570px) {
   .info .info-container .home-info {
     grid-template-areas:
-      "first-column first-column first-column  first-column"
-      "section-slider section-slider section-slider  section-slider"
-      "second-column second-column second-column  second-column";
+      'first-column first-column first-column  first-column'
+      'section-slider section-slider section-slider  section-slider'
+      'second-column second-column second-column  second-column';
   }
   .info .info-container .home-info .section-slider .slider {
     width: 450px;

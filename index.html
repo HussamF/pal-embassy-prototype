@@ -51,6 +51,8 @@
 
                 <li class="nav-link"><a href="#about">السفارة</a></li>
                 <li class="nav-link"><a href="index.html">الرئيسية</a></li>
+                <li class="nav-link"><a href="italian.html">IT</a></li>
+                <li class="nav-link"><a href="index.html">AR</a></li>
               </ul>
             </nav>
           </div>
@@ -1005,9 +1007,9 @@
             </div>
 
             <div class="modal-body">
-              <div>
+              <div class="ambassador">
                 <br />
-                <h2 class="ambassador">سعادة السفيره عبير عودة</h2>
+                <h2>سعادة السفيره عبير عودة</h2>
                 <br />
                 <img src="./Imgs/ambassador.jpeg" alt="" />
               </div>
@@ -1418,63 +1420,64 @@
 
     <!-- Contact -->
     <section class="contact" id="contact">
-      <div class="contact-head">
-        <h1 class="h1">مواعيد الدوام</h1>
-        <p>من الاثنين إلى الجمعة ( السفاره) : 9:00 – 16:00</p>
-        <p>10:00 – 14:00 : من الاثنين إلى الجمعة ( الشؤون القنصليه )</p>
-      </div>
-      <div class="contact-container">
-        <div class="contact-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.481865890924!2d12.487885199921648!3d41.88249297301826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61ceac10b115%3A0xe618167f485617cc!2sViale%20Guido%20Baccelli%2C%2010%2C%2000153%20Roma%20RM!5e0!3m2!1sen!2sit!4v1607867759609!5m2!1sen!2sit"
-            width="600"
-            height="450"
-            frameborder="0"
-            style="border: 0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
+      <div class="contact-top">
+        <div class="contact-head">
+          <h1 class="h1">مواعيد الدوام</h1>
+          <p>من الاثنين إلى الجمعة ( السفاره) : 9:00 – 16:00</p>
+          <p>10:00 – 14:00 : من الاثنين إلى الجمعة ( الشؤون القنصليه )</p>
         </div>
-        <div class="contact-inner">
-          <div class="contact-box">
-            <div class="contact-text">
-              <div class="location">
-                <svg class="icon">
-                  <use xlink:href="Imgs/icons.svg#placeholder" />
-                </svg>
-                <h2>الموقع</h2>
-              </div>
-              <p>Via Guido Baccelli 10 - Roma</p>
-            </div>
+        <div class="contact-container">
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.481865890924!2d12.487885199921648!3d41.88249297301826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61ceac10b115%3A0xe618167f485617cc!2sViale%20Guido%20Baccelli%2C%2010%2C%2000153%20Roma%20RM!5e0!3m2!1sen!2sit!4v1607867759609!5m2!1sen!2sit"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
           </div>
-
-          <div class="contact-box">
-            <div class="contact-text">
-              <div class="phone">
-                <svg class="icon">
-                  <use xlink:href="Imgs/icons.svg#telephone" />
-                </svg>
-                <h2>تيليفون</h2>
+          <div class="contact-inner">
+            <div class="contact-box">
+              <div class="contact-text">
+                <div class="location">
+                  <svg class="icon">
+                    <use xlink:href="Imgs/icons.svg#placeholder" />
+                  </svg>
+                  <h2>الموقع</h2>
+                </div>
+                <p>Via Guido Baccelli 10 - Roma</p>
               </div>
-              <p>+39.067005041 / +39.0670087914</p>
             </div>
-          </div>
 
-          <div class="contact-box">
-            <div class="contact-text">
-              <div class="email">
-                <svg class="icon">
-                  <use xlink:href="Imgs/icons.svg#email" />
-                </svg>
-                <h2>إيميل</h2>
+            <div class="contact-box">
+              <div class="contact-text">
+                <div class="phone">
+                  <svg class="icon">
+                    <use xlink:href="Imgs/icons.svg#telephone" />
+                  </svg>
+                  <h2>تيليفون</h2>
+                </div>
+                <p>+39.067005041 / +39.0670087914</p>
               </div>
-              <p>Email@email.com</p>
+            </div>
+
+            <div class="contact-box">
+              <div class="contact-text">
+                <div class="email">
+                  <svg class="icon">
+                    <use xlink:href="Imgs/icons.svg#email" />
+                  </svg>
+                  <h2>إيميل</h2>
+                </div>
+                <p>Email@email.com</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
       <div class="contact-form">
         <form>
           <h2>للإسـتفسار</h2>
@@ -1569,7 +1572,7 @@
       const next = document.getElementById('next');
       const prev = document.getElementById('prev');
       const auto = true;
-      const intervalTime = 5000;
+      const intervalTime = 3000;
       let slideInterval;
       const nextSlide = () => {
         //Get current class

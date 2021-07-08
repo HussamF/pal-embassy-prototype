@@ -13,8 +13,8 @@ button {
 }
 
 .home-banner {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url(../Imgs/hero2.jpg) center no-repeat fixed;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(../Imgs/hero3.jpg) center no-repeat fixed;
   background-size: cover;
   min-height: 100vh;
   padding: 1rem 2rem;
@@ -30,7 +30,7 @@ button {
   color: white;
   padding: 0 1rem;
   font-family: 'El Messiri', sans-serif;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.1;
 }
 
@@ -134,5 +134,10 @@ button {
     opacity: 1;
   }
 }
-@media (max-width: 1340px) {
+@media (max-width: 500px) {
+  .home-banner {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+      url(../Imgs/heroM.jpg) center no-repeat fixed;
+    background-size: cover;
+  }
 }

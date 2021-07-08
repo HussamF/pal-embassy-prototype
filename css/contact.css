@@ -1,11 +1,13 @@
 /* Contact */
 .contact {
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 6rem 0;
+  margin: 0 auto;
   /* background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.92),
@@ -19,11 +21,16 @@
 
   /* padding: 6rem 0; */
 }
-
+/* .contact .contact-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
 .contact .contact-head {
   max-width: 90%;
   text-align: center;
   padding: 0 0.5rem;
+  margin: 0 auto;
 }
 
 .contact .contact-head h1 {
@@ -32,14 +39,14 @@
   flex-direction: column;
   align-items: center;
   margin-top: 6rem;
-  font-family: "El Messiri", sans-serif;
+  font-family: 'El Messiri', sans-serif;
   /* text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5); */
 
   text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.2);
 }
 
 .contact .contact-head h1::after {
-  content: "";
+  content: '';
   width: 500px;
   height: 1px;
   background: linear-gradient(to right, transparent, white, transparent);
@@ -48,7 +55,7 @@
 
 .contact .contact-head p {
   font-size: 2.5rem;
-  font-family: "Abel", sans-serif;
+  font-family: 'Abel', sans-serif;
   line-height: 1.5;
   /* padding: 0.5rem; */
 }
@@ -102,14 +109,14 @@
 .contact .contact-container .contact-inner .contact-box .contact-text h2 {
   font-size: 2.5rem;
   font-weight: 500;
-  font-family: "El Messiri", sans-serif;
+  font-family: 'El Messiri', sans-serif;
   text-align: center;
 }
 
 .contact .contact-container .contact-inner .contact-box .contact-text p {
   font-size: 2.5rem;
   font-weight: 400;
-  font-family: "Abel", sans-serif;
+  font-family: 'Abel', sans-serif;
   text-align: center;
 }
 
@@ -126,7 +133,7 @@
   font-weight: 400;
   color: #fff;
   letter-spacing: 1px;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .contact .contact-form .input-box {
@@ -149,7 +156,7 @@
   text-align: right;
 }
 
-.contact .contact-form .input-box input[type="submit"] {
+.contact .contact-form .input-box input[type='submit'] {
   width: 10rem;
   color: white;
   background-color: rgb(90, 90, 90);
@@ -164,7 +171,7 @@
   text-align: center;
   margin-bottom: 3rem;
 }
-.contact .contact-form .input-box input[type="submit"]:hover {
+.contact .contact-form .input-box input[type='submit']:hover {
   color: black;
   background: white;
 }
@@ -181,7 +188,7 @@ iframe {
   padding: 1.5rem 0;
   text-align: center;
 
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 .footer-bottom p {
   font-size: 1.4rem;
