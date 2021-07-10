@@ -14,7 +14,7 @@ button {
 
 .home-banner {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
-    url(../Imgs/hero3.jpg) center no-repeat fixed;
+    url(../Imgs/hero3.jpg) center no-repeat;
   background-size: cover;
   min-height: 100vh;
   padding: 1rem 2rem;

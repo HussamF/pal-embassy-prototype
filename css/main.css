@@ -1,0 +1,29 @@
+body {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../Imgs/hero3.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 100vh !important;
+
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 2.5rem;
+}
+
+.main-page-container .arabic {
+  font-family: 'El Messiri', sans-serif;
+}
+
+.languages a img {
+  width: 250px;
+}
