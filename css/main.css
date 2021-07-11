@@ -32,3 +32,19 @@ body {
 .languages a img {
   width: 250px;
 }
+
+@media screen and (max-width: 1400px) {
+  body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+      url(../Imgs/herosmall.jpg) center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  body {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+      url(../Imgs/herophone6.jpg) center no-repeat;
+    background-size: cover;
+  }
+}
