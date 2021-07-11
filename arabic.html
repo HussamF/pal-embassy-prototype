@@ -1308,6 +1308,32 @@
     <!-- Info Section -->
     <section class="info" id="info">
       <div class="info-container">
+        <div class="section-slider">
+          <div class="slide-container">
+            <div class="slider">
+              <div class="slide current">
+                <div class="slide-content">
+                  <h1>أخــــبار</h1>
+                  <p>عن فلـــسطين</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content">
+                  <h1>أخــــبار</h1>
+                  <p>عن الــــسفارة</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content">
+                  <h1>أخــــبار</h1>
+                  <p>دولــــــية</p>
+                </div>
+              </div>
+            </div>
+            <i class="fas fa-arrow-right slide-btn" id="next"></i>
+            <i class="fas fa-arrow-left slide-btn" id="prev"></i>
+          </div>
+        </div>
         <div class="home-info">
           <!-- <div id="floater"></div> -->
           <div class="info-btns first-column">
@@ -1349,30 +1375,81 @@
             </div>
           </div>
 
-          <div class="section-slider">
-            <div class="slide-container">
-              <div class="slider">
-                <div class="slide current">
-                  <div class="slide-content">
-                    <h1>أخبار</h1>
-                    <p>عن فلسطين</p>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="slide-content">
-                    <h1>أخبار</h1>
-                    <p>عن السفارة</p>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="slide-content">
-                    <h1>أخبار</h1>
-                    <p>دولــــــية</p>
-                  </div>
-                </div>
-              </div>
-              <i class="fas fa-arrow-right slide-btn" id="next"></i>
-              <i class="fas fa-arrow-left slide-btn" id="prev"></i>
+          <div class="info-btns second-column">
+            <h2>قضايا فلسطينية</h2>
+            <div class="info-btn">
+              <a
+                ><button class="modal-open btn" data-modal="modal-1">
+                  الإحتلال
+                </button></a
+              >
+            </div>
+            <div class="info-btn">
+              <a
+                ><button class="modal-open btn" data-modal="modal-2">
+                  القدس
+                </button></a
+              >
+            </div>
+            <div class="info-btn">
+              <a
+                ><button class="modal-open btn" data-modal="modal-3">
+                  غزة
+                </button></a
+              >
+            </div>
+            <div class="info-btn">
+              <a
+                ><button class="modal-open btn" data-modal="modal-4">
+                  القوى السياسية
+                </button></a
+              >
+            </div>
+            <div class="info-btn">
+              <a
+                ><button class="modal-open btn" data-modal="modal-5">
+                  اللاجئيـن
+                </button></a
+              >
+            </div>
+          </div>
+
+          <div class="info-btns third-column">
+            <h2>نبذة عن فلـسـطين</h2>
+            <div class="info-btn">
+              <a
+                ><button class="modal-open btn" data-modal="modal-6">
+                  منظمة التحرير الفلسطينية
+                </button></a
+              >
+            </div>
+            <div class="info-btn">
+              <a
+                ><button class="modal-open btn" data-modal="modal-7">
+                  الرئيس محمود عباس
+                </button></a
+              >
+            </div>
+            <div class="info-btn">
+              <a
+                ><button class="modal-open btn" data-modal="modal-8">
+                  حقائق و دلائل
+                </button></a
+              >
+            </div>
+            <div class="info-btn">
+              <a
+                ><button class="modal-open btn" data-modal="modal-9">
+                  الاقتصاد الفلسطيني
+                </button></a
+              >
+            </div>
+            <div class="info-btn">
+              <a
+                ><button class="modal-open btn" data-modal="modal-10">
+                  جغرافيا فلسطين
+                </button></a
+              >
             </div>
           </div>
 
@@ -1427,18 +1504,6 @@
           <p>10:00 – 14:00 : من الاثنين إلى الجمعة ( الشؤون القنصليه )</p>
         </div>
         <div class="contact-container">
-          <div class="contact-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.481865890924!2d12.487885199921648!3d41.88249297301826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61ceac10b115%3A0xe618167f485617cc!2sViale%20Guido%20Baccelli%2C%2010%2C%2000153%20Roma%20RM!5e0!3m2!1sen!2sit!4v1607867759609!5m2!1sen!2sit"
-              width="600"
-              height="450"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe>
-          </div>
           <div class="contact-inner">
             <div class="contact-box">
               <div class="contact-text">
@@ -1448,19 +1513,7 @@
                   </svg>
                   <h2>الموقع</h2>
                 </div>
-                <p>Via Guido Baccelli 10 - Roma</p>
-              </div>
-            </div>
-
-            <div class="contact-box">
-              <div class="contact-text">
-                <div class="phone">
-                  <svg class="icon">
-                    <use xlink:href="Imgs/icons.svg#telephone" />
-                  </svg>
-                  <h2>تيليفون</h2>
-                </div>
-                <p>+39.067005041 / +39.0670087914</p>
+                <p>Roma-Via Guido Baccelli 10</p>
               </div>
             </div>
 
@@ -1473,6 +1526,19 @@
                   <h2>إيميل</h2>
                 </div>
                 <p>Email@email.com</p>
+              </div>
+            </div>
+
+            <div class="contact-box">
+              <div class="contact-text">
+                <div class="phone">
+                  <svg class="icon">
+                    <use xlink:href="Imgs/icons.svg#telephone" />
+                  </svg>
+                  <h2>تيليفون</h2>
+                </div>
+                <p>+39.067005041</p>
+                <p>+39.067008791</p>
               </div>
             </div>
           </div>
@@ -1504,6 +1570,18 @@
             <input type="submit" value="أرسل" />
           </div>
         </form>
+      </div>
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.481865890924!2d12.487885199921648!3d41.88249297301826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61ceac10b115%3A0xe618167f485617cc!2sViale%20Guido%20Baccelli%2C%2010%2C%2000153%20Roma%20RM!5e0!3m2!1sen!2sit!4v1607867759609!5m2!1sen!2sit"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
       </div>
     </section>
     <footer></footer>

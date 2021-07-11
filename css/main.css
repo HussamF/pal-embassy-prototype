@@ -1,13 +1,17 @@
 body {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url(../Imgs/hero3.jpg) center no-repeat;
+    url(../Imgs/23.jpg) center no-repeat;
   background-size: cover;
-  min-height: 100vh !important;
+  /* min-height: 100vh !important; */
+  max-width: 100%;
+  min-height: 100vh;
+  width: auto\9;
 
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .main-page-container {
@@ -20,8 +24,9 @@ body {
   font-size: 2.5rem;
 }
 
-.main-page-container .arabic {
-  font-family: 'El Messiri', sans-serif;
+.main-page-container .arabic h1 {
+  font-family: 'Almarai', sans-serif;
+  font-weight: 700;
 }
 
 .languages a img {
