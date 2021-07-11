@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url(../Imgs/23.jpg) center no-repeat;
+    url(../Imgs/23.jpg) no-repeat;
   background-size: cover;
   /* min-height: 100vh !important; */
   max-width: 100%;
@@ -33,18 +33,40 @@ body {
   width: 250px;
 }
 
+@media screen and (max-width: 1680px) {
+  body {
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+      url(../Imgs/17inch.jpg) center no-repeat;
+    background-size: cover; */
+  }
+}
+
 @media screen and (max-width: 1400px) {
   body {
+    /* background-position: 20%; */
+  }
+}
+/* @media screen and (max-width: 1280px) {
+  body {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-      url(../Imgs/herosmall.jpg) center no-repeat;
+      url(../Imgs/11inch.jpg) center no-repeat;
     background-size: cover;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  body {
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+      url(../Imgs/ipad.jpg) center no-repeat;
+    background-size: cover; */
+    background-position: 10%;
   }
 }
 
 @media screen and (max-width: 670px) {
   body {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-      url(../Imgs/herophone6.jpg) center no-repeat;
-    background-size: cover;
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+      url(../Imgs/herophone6.jpg) center no-repeat; */
+    /* background-position: 50%; */
   }
 }
