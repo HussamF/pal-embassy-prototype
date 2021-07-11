@@ -135,9 +135,9 @@ button {
   }
 }
 @media (max-width: 500px) {
-  .home-banner {
+  /* .home-banner {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
       url(../Imgs/heroM.jpg) center no-repeat;
     background-size: cover;
-  }
+  } */
 }
