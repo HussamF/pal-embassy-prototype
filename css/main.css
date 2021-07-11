@@ -3,11 +3,12 @@ body {
     url(../Imgs/23.jpg) no-repeat;
   background-size: cover;
   /* min-height: 100vh !important; */
-  max-width: 100%;
+  /* max-width: 100%; */
   min-height: 100vh;
-  width: auto\9;
+  /* max-height: 100vh; */
+  /* width: auto\9; */
 
-  padding: 1rem 2rem;
+  padding: 0 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,16 +60,16 @@ body {
     /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
       url(../Imgs/ipad.jpg) center no-repeat;
     background-size: cover; */
-    background-position: 9%;
+    /* background-position: 9%; */
   }
 }
 
 @media screen and (max-width: 670px) {
   .main-page-container .arabic h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .main-page-container .italian h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .languages a img {
     width: 100px;
